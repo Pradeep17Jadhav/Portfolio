@@ -1,0 +1,39 @@
+.section {
+    background-color: #131416;
+    padding: 96px 0px;
+    height: 100%;
+    position: relative;
+}
+
+.section .title {
+    font-size: 48px;
+    margin: 16px 0px;
+    text-transform: uppercase;
+    font-weight: 800;
+    position: relative;
+    margin: 0 0 15px;
+    padding: 0 0 15px;
+    color: #fff;
+}
+
+.section .title:after {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 3px;
+    background: #dc965a;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+  
+.section .summary {
+    line-height: 30px;
+}
+
+@media (max-width: 576px) {
+    .section .title {
+        font-size: 32px;
+    }
+}

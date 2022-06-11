@@ -1,0 +1,27 @@
+.intro {
+    height: 100vh;
+    background-image: url(https://pradeepjadhav.in/resources/images/desk.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.intro .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.intro .info .name {
+    font-size: 72px;
+    font-family: Montserrat, Raleway, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 16px;
+}
+
+@media (max-width: 576px) {
+    .intro .info .name {
+        font-size: 48px;
+    }
+}

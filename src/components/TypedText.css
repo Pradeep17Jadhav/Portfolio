@@ -1,0 +1,45 @@
+.typed-text-container {
+    font-size: 40px;
+    padding: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+    margin: 16px;
+}
+
+.typed-text-container .typed-text {
+    font-weight: normal;
+    color: #dc965a;
+}
+
+.typed-text-container .cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 4px;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+
+.typed-text-container .cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+}
+
+@media (max-width: 576px) {
+    .typed-text-container {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .typed-text-container {
+        font-size: 24px;
+    }
+}

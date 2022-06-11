@@ -1,0 +1,25 @@
+.social {
+    margin: 16px;
+}
+
+.social a {
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    background: #fff;
+    border-radius: 50%;
+    line-height: 36px;
+    color: #1c1d24;
+    margin-right: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s ease-in-out;
+}
+
+.social a:hover {
+    background: #dc965a;
+    color: #fff;
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+}

@@ -1,0 +1,45 @@
+.btn {
+    padding: 0px 24px;
+    line-height: 46px;
+    display: inline-block;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none !important;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+    cursor: pointer !important;
+}
+
+
+.btn-primary {
+    background: #dc965a;
+    color: #fff;
+    margin: 16px 16px 0px 16px;
+}
+
+.btn-primary:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: auto;
+    top: 0;
+    width: 0;
+    transition: all .35s ease;
+    background: #1c1d24;
+    z-index: -1;
+}
+
+.btn-primary:hover {
+    color: #fff
+}
+
+.btn-primary:hover:after {
+    width: 100%;
+    left: auto;
+    right: 0;
+}

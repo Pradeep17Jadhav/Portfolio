@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+  background: #131416;
+  color: #878e99;
+  font-family: Montserrat, Raleway, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.content {
+  margin: 24px 24px;
+}
+
+*,:after,:before {
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .container {
+      max-width: 720px;
+  }
+}
