@@ -1,5 +1,5 @@
 .typed-text-container {
-    font-size: 40px;
+    font-size: 2.5rem;
     padding: 0.5rem;
     font-weight: bold;
     text-align: center;
@@ -34,12 +34,12 @@
 
 @media (max-width: 576px) {
     .typed-text-container {
-        font-size: 32px;
+        font-size: 2rem;
     }
 }
 
 @media (max-width: 480px) {
     .typed-text-container {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 }

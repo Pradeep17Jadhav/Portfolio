@@ -44,7 +44,9 @@ export default function Intro(props) {
         }
     }
 
-    useEffect(() => setTimeout(type, newTextDelay + 250), []);
+    useEffect(() => {
+        setTimeout(type, newTextDelay + 250)
+    }, []);
 
     return (
         <h2 className="typed-text-container">
