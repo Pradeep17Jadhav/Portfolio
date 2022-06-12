@@ -1,5 +1,6 @@
 import Intro from './../sections/Intro';
 import AboutMe from './../sections/AboutMe';
+import Experiance from './../sections/Experiance';
 import { Fragment } from "react";
 
 export default function Homepage() {
@@ -9,6 +10,7 @@ export default function Homepage() {
                 name={"Pradeep Jadhav"}
             />
             <AboutMe />
+            <Experiance />
         </Fragment>
 	);
 }

@@ -11,6 +11,7 @@ export default function AboutMe(props) {
             className="about-me" 
             title={title}
             summary={summary}
+            lightBackground
         >
             <ButtonPrimary 
                 text="View Resume"

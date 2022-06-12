@@ -1,10 +1,11 @@
 .App {
   text-align: center;
   background: #131416;
-  color: #878e99;
+  color: #b3b3b3;
+  box-sizing: content-box;
 }
 
-.container {
+.container, .container-large {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -14,6 +15,7 @@
   margin: 24px 24px;
 }
 
+
 *,:after,:before {
   box-sizing: border-box;
 }
@@ -21,5 +23,9 @@
 @media (min-width: 768px) {
   .container {
       max-width: 720px;
+  }
+
+  .container-large {
+    max-width: 960px;
   }
 }

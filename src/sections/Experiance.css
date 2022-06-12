@@ -1,0 +1,13 @@
+.experiance .company {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.bullets {
+    text-align: left;
+    line-height: 30px;
+}
+
+.bullets li {
+    margin-bottom: 12px;
+}

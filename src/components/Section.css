@@ -5,6 +5,12 @@
     position: relative;
 }
 
+.section-box {
+    background-color: #1c1d24;
+    padding: 16px;
+    margin-top: 48px;
+}
+
 .section .title {
     font-size: 3rem;
     margin: 16px 0px;

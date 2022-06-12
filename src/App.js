@@ -1,6 +1,6 @@
 import './App.css';
 
-import { BrowserRouter as Router, Routes, Route, Redirect, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Homepage from './pages/Homepage';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
 						<Homepage />
 					} 
 					/>
-					
+
 					<Route path="*" element = {
 						<Navigate to="/" replace />
 					} />
