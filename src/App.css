@@ -11,13 +11,16 @@
   margin-left: auto;
 }
 
-.content {
-  margin: 24px 24px;
-}
-
-
 *,:after,:before {
   box-sizing: border-box;
+}
+
+* {
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
 }
 
 @media (min-width: 768px) {

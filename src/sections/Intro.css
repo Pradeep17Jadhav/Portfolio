@@ -24,23 +24,23 @@
 
 @keyframes animate {
     0%, 100% {
-      text-shadow: -2px -2px 1px #4a61e7, 2px 2px 1px #fc4646;
+      text-shadow: -2px -2px 1px #0026ff, 2px 2px 1px #fc4646;
     }
     
     25% {
-      text-shadow: 2px 2px 1px #4a61e7, -2px -2px 1px #fc4646;
+      text-shadow: 2px 2px 1px #0026ff, -2px -2px 1px #fc4646;
     }
     
     50% {
-      text-shadow: 2px -2px 1px #4a61e7, -2px 2px 1px #fc4646;
+      text-shadow: 2px -2px 1px #0026ff, -2px 2px 1px #fc4646;
     }
     
     75% {
-      text-shadow: -2px 2px 1px #4a61e7, 2px -2px 1px #fc4646;
+      text-shadow: -2px 2px 1px #0026ff, 2px -2px 1px #fc4646;
     }
     
     100% {
-      text-shadow: 2px 2px 1px #4a61e7, -2px -2px 1px #fc4646;
+      text-shadow: 2px 2px 1px #0026ff, -2px -2px 1px #fc4646;
     }
 }
 
