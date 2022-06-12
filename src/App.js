@@ -1,17 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
-import Intro from './sections/Intro';
-import AboutMe from './sections/AboutMe';
+
+import { BrowserRouter as Router, Routes, Route, Redirect, Navigate } from 'react-router-dom';
+import Homepage from './pages/Homepage';
 
 function App() {
-  return (
-    <div className="App">
-        <Intro 
-          name={"Pradeep Jadhav"}
-        />
-        <AboutMe />
-    </div>
-  );
+	return (
+		<div className="App">
+			<Router>
+				<Routes>
+					<Route path="/" exact element = {
+						<Homepage />
+					} 
+					/>
+					
+					<Route path="*" element = {
+						<Navigate to="/" replace />
+					} />
+				</Routes>
+			</Router>
+		</div>
+	);
 }
 
 export default App;

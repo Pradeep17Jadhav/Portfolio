@@ -1,6 +1,6 @@
 .intro {
     height: 100vh;
-    background-image: url(https://pradeepjadhav.in/resources/images/desk.jpg);
+    background-image: url(./../resources/intro_background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;

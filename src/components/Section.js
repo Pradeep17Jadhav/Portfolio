@@ -1,9 +1,6 @@
 import React from 'react';
 import './Section.css';
 import Zoom from 'react-reveal/Zoom';
-import Flip from 'react-reveal/Flip';
-
-
 
 export default function Section(props) {
     const newClassName = "section " + (props.className ? props.className : "");
@@ -12,11 +9,9 @@ export default function Section(props) {
             <div className="container">
                 <Zoom>
                     <div className="content">
-                        <Flip>
-                            <h1 className="title">
-                                {props.title}
-                            </h1>
-                        </Flip>
+                        <h1 className="title">
+                            {props.title}
+                        </h1>
                         
                         <p className="summary">
                             {props.summary}
