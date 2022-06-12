@@ -4,6 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
+    background-attachment: fixed;
 }
 
 .intro .info {
@@ -16,8 +17,31 @@
 .intro .info .name {
     font-size: 4.5rem;
     font-family: Montserrat, Raleway, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #fff;
+    color: rgba(255, 255, 255);
     margin: 16px;
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+    0%, 100% {
+      text-shadow: -2px -2px 1px #4a61e7, 2px 2px 1px #fc4646;
+    }
+    
+    25% {
+      text-shadow: 2px 2px 1px #4a61e7, -2px -2px 1px #fc4646;
+    }
+    
+    50% {
+      text-shadow: 2px -2px 1px #4a61e7, -2px 2px 1px #fc4646;
+    }
+    
+    75% {
+      text-shadow: -2px 2px 1px #4a61e7, 2px -2px 1px #fc4646;
+    }
+    
+    100% {
+      text-shadow: 2px 2px 1px #4a61e7, -2px -2px 1px #fc4646;
+    }
 }
 
 @media (max-width: 576px) {
