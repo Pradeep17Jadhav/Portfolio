@@ -2,13 +2,13 @@ import React, { useEffect } from 'react';
 import './TypedText.css';
 
 export default function Intro(props) {
-
     const textArray = ["Software Engineer...", "Web Developer...", "Full Stack Developer..."];
+    const initialValue = textArray[0];
     const typingDelay = 100;
     const erasingDelay = 50;
     const newTextDelay = 1000; // Delay between current and next text
     let textArrayIndex = 0;
-    let charIndex = 0;
+    let charIndex = initialValue.length-1;
 
     const type = () => {
         let typedTextSpan = document.querySelector(".typed-text");
@@ -45,12 +45,12 @@ export default function Intro(props) {
     }
 
     useEffect(() => {
-        setTimeout(type, newTextDelay + 250)
+        setTimeout(erase, newTextDelay + 250);
     }, []);
 
     return (
         <h2 className="typed-text-container">
-            <span className="typed-text"></span>
+            <span className="typed-text typing">{textArray[0]}</span>
             <span className="cursor">&nbsp;</span>
         </h2>
     )
