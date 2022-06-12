@@ -2,15 +2,15 @@ import React from 'react';
 import Section from '../components/Section';
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
-import ZeusLogo from './../resources/experiance/zeuslearning_logo.png';
+import ZeusLogo from './../resources/experience/zeuslearning_logo.png';
 
-import './Experiance.css';
+import './Experience.css';
 
-export default function Experiance(props) {
+export default function Experience(props) {
     return (
         <Section 
-            className="experiance"
-            title="Experiance"
+            className="experience"
+            title="Experience"
             large
         >
             <Zoom>

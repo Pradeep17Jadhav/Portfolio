@@ -1,8 +1,8 @@
-.experiance .section-box {
+.experience .section-box {
     text-align: left;
 }
 
-.experiance .company {
+.experience .company {
     color: #dc965a;
     padding-left: 24px;
     font-size: 26px;
@@ -12,24 +12,24 @@
     align-items: center;
 }
 
-.experiance .company img {
+.experience .company img {
     height: 40px;
     width: 40px;
 }
 
-.experiance .role {
+.experience .role {
     padding-left: 24px;
     display: inline-block;
     color: #e1e1e1;
 }
 
-.experiance .role .designation {
+.experience .role .designation {
     font-size: 18px;
     font-weight: 500;
     margin-top: 8px;
 }
 
-.experiance .role .duration {
+.experience .role .duration {
     background-color: #dc965a;
     color: #000;
     padding: 1px 8px;
@@ -54,7 +54,7 @@
 
 
 @media (max-width: 576px) {
-    .experiance .company {
+    .experience .company {
         font-size: 22px;
     }    
 }
