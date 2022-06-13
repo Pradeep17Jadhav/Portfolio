@@ -1,8 +1,7 @@
 import React from 'react';
 import Section from '../components/Section';
-import Zoom from 'react-reveal/Zoom';
-import Fade from 'react-reveal/Fade';
 import ZeusLogo from './../resources/experience/zeuslearning_logo.png';
+import Zoom from 'react-reveal/Zoom';
 
 import './Experience.css';
 
@@ -12,20 +11,22 @@ export default function Experience(props) {
             className="experience"
             title="Experience"
             large
+            noreveal
         >
+            <Zoom>
                 <div className="section-box">
-                        <div className="company">
-                            <img src={ZeusLogo}></img>
-                            &nbsp;&nbsp;&nbsp;Zeus Learning Pvt. Ltd.
+                    <div className="company">
+                        <img src={ZeusLogo}></img>
+                        &nbsp;&nbsp;&nbsp;Zeus Learning Pvt. Ltd.
+                    </div>
+                    <div className="role">
+                        <div className="designation col">
+                            Software Engineer
                         </div>
-                        <div className="role">
-                            <div className="designation col">
-                                Software Engineer
-                            </div>
-                            <div className="duration col">
-                                Sept 2020 - Present
-                            </div>
+                        <div className="duration col">
+                            Sept 2020 - Present
                         </div>
+                    </div>
                     <ul className="bullets">
                         <li>
                             Working on an e-learning based digital whiteboard web application as a full stack developer.
@@ -50,7 +51,9 @@ export default function Experience(props) {
                         </li>
                     </ul>
                 </div>
+            </Zoom>
 
+            <Zoom>
                 <div className="section-box">
                         <div className="company">
                             <img src={ZeusLogo} width="18px"></img>
@@ -73,6 +76,7 @@ export default function Experience(props) {
                         </li>
                     </ul>
                 </div>
+            </Zoom>
         </Section>
     )
 }
