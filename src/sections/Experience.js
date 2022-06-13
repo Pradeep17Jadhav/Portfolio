@@ -13,9 +13,7 @@ export default function Experience(props) {
             title="Experience"
             large
         >
-            <Zoom>
                 <div className="section-box">
-                    <Fade right>
                         <div className="company">
                             <img src={ZeusLogo}></img>
                             &nbsp;&nbsp;&nbsp;Zeus Learning Pvt. Ltd.
@@ -28,7 +26,6 @@ export default function Experience(props) {
                                 Sept 2020 - Present
                             </div>
                         </div>
-                    </Fade>
                     <ul className="bullets">
                         <li>
                             Working on an e-learning based digital whiteboard web application as a full stack developer.
@@ -53,11 +50,8 @@ export default function Experience(props) {
                         </li>
                     </ul>
                 </div>
-            </Zoom>
 
-            <Zoom>
                 <div className="section-box">
-                    <Fade right>
                         <div className="company">
                             <img src={ZeusLogo} width="18px"></img>
                             &nbsp;&nbsp;&nbsp;Zeus Learning Pvt. Ltd.
@@ -70,7 +64,6 @@ export default function Experience(props) {
                                 Aug 2020 - Aug 2020
                             </div>
                         </div>
-                    </Fade>
                     <ul className="bullets">
                         <li>
                             Worked on UI improvements on various forms and dialogs.
@@ -80,7 +73,6 @@ export default function Experience(props) {
                         </li>
                     </ul>
                 </div>
-            </Zoom>
         </Section>
     )
 }

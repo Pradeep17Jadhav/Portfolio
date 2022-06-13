@@ -22,6 +22,12 @@
     animation: animate 1s linear infinite;
 }
 
+canvas {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
 @keyframes animate {
     0%, 100% {
       text-shadow: -2px -2px 1px #0026ff, 2px 2px 1px #fc4646;

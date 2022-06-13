@@ -6,15 +6,16 @@ import TypedText from '../components/TypedText'
 export default function Intro(props) {
     return (
         <section className="intro">
-            <div className="container">
-                <div className="info">
-                    <div>
-                        <h1 className="name">
-                            {props.name}
-                        </h1>
-                        <TypedText />
-                        <Social />
-
+            <div id="particles-js">
+                <div className="container">
+                    <div className="info">
+                        <div>
+                            <h1 className="name">
+                                {props.name}
+                            </h1>
+                            <TypedText />
+                            <Social />
+                        </div>
                     </div>
                 </div>
             </div>
