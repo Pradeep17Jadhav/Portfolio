@@ -15,8 +15,8 @@ function startParticles() {
                 "shape": {
                     "type": "circle",
                     "stroke": {
-                        "width": 0,
-                        "color": "#000000"
+                        "width": 1,
+                        "color": "#fff"
                     },
                     "polygon": {
                         "nb_sides": 5
@@ -49,7 +49,7 @@ function startParticles() {
                 },
                 "line_linked": {
                     "enable": true,
-                    "distance": 260,
+                    "distance": 220,
                     "color": "#ffffff",
                     "opacity": 0.4,
                     "width": 1
