@@ -84,7 +84,7 @@ function startParticles() {
                 },
                 "modes": {
                     "grab": {
-                        "distance": 200,
+                        "distance": 180,
                         "line_linked": {
                             "opacity": 3
                         }
