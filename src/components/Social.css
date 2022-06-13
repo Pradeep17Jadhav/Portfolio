@@ -1,5 +1,7 @@
 .social {
     margin: 16px;
+    position: relative;
+    z-index: 1;
 }
 
 .social a {

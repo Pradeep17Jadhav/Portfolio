@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import './TypedText.css';
 
 export default function Intro(props) {
-    const textArray = ["Software Engineer...", "Web Developer...", "Full Stack Developer..."];
+    const textArray = ["Software Engineer", "Full Stack Developer", "Web Developer"];
     const initialValue = textArray[0];
     const typingDelay = 100;
     const erasingDelay = 50;
@@ -45,7 +45,7 @@ export default function Intro(props) {
     }
 
     useEffect(() => {
-        setTimeout(erase, newTextDelay + 250);
+        setTimeout(erase, newTextDelay * 2);
     }, []);
 
     return (
