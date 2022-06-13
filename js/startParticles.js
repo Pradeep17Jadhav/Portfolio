@@ -92,7 +92,7 @@ function startParticles() {
                     "bubble": {
                         "distance": 250,
                         "size": 7,
-                        "duration": 1,
+                        "duration": 0.5,
                         "opacity": 6,
                         "speed": 10
                     },
