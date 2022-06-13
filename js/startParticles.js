@@ -1,6 +1,11 @@
 function startParticles() {
     window.onload = function () {
-        particlesJS("particles-js", {
+        setTimeout(() => {
+            particlesJS("particles-js", config);
+        }, 10);
+
+
+        var config = {
             "particles": {
                 "number": {
                     "value": 50,
@@ -84,9 +89,9 @@ function startParticles() {
                 },
                 "modes": {
                     "grab": {
-                        "distance": 180,
+                        "distance": 140,
                         "line_linked": {
-                            "opacity": 3
+                            "opacity": 1
                         }
                     },
                     "bubble": {
@@ -109,6 +114,6 @@ function startParticles() {
                 }
             },
             "retina_detect": true
-        });
-    };
+        };
+    }
 }
