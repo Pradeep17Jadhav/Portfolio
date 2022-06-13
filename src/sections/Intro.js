@@ -6,7 +6,7 @@ import TypedText from '../components/TypedText'
 export default function Intro(props) {
     return (
         <section className="intro">
-            <div id="particles-js">
+            <div id="particles-js"></div>
                 <div className="container">
                     <div className="info">
                         <div>
@@ -18,7 +18,7 @@ export default function Intro(props) {
                         </div>
                     </div>
                 </div>
-            </div>
+            
         </section>
     );
 }
