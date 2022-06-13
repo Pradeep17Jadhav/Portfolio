@@ -1,6 +1,11 @@
 function startParticles() {
     window.onload = function () {
-        particlesJS("particles-js", {
+        setTimeout(() => {
+            particlesJS("particles-js", config);
+        }, 10);
+
+
+        var config = {
             "particles": {
                 "number": {
                     "value": 50,
@@ -109,6 +114,6 @@ function startParticles() {
                 }
             },
             "retina_detect": true
-        });
-    };
+        };
+    }
 }
