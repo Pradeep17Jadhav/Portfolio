@@ -1151,14 +1151,9 @@ var pJS = function(tag_id, params){
               break;
   
             }
-  
           }
-  
         });
-          
       }
-  
-  
     };
   
     pJS.fn.vendors.densityAutoParticles = function(){
