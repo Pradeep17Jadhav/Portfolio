@@ -1,0 +1,11 @@
+.projects {
+    margin-top: 48px;
+}
+
+
+@media (max-width: 576px) {
+    .projects .col-12 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}

@@ -1,0 +1,22 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+}
+
+.footer .credits {
+    padding: 0px;
+    margin: 0px;
+    color: #fff !important;
+}
+
+.footer .credits a {
+    color: #fff !important;
+    font-weight: 500;
+}
+
+.footer .credits a:hover {
+    color: #dc965a !important;
+    text-decoration: none;
+}

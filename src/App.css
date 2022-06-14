@@ -1,34 +1,42 @@
 .App {
-  text-align: center;
-  background: #131416;
-  color: #b3b3b3;
-  box-sizing: content-box;
+	text-align: center;
+	background: #131416;
+	color: #b3b3b3;
+	box-sizing: content-box;
 }
 
-.container, .container-large {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+.holder, .holder-large, .holder-extralarge, .holder-fullwidth {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 *,:after,:before {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 * {
-  -webkit-touch-callout:none;
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  user-select:none;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
 }
 
 @media (min-width: 768px) {
-  .container {
-      max-width: 720px;
-  }
+	.holder {
+		max-width: 720px;
+	}
 
-  .container-large {
-    max-width: 960px;
-  }
+	.holder-large {
+		max-width: 960px;
+	}
+
+	.holder-extralarge {
+		max-width: 1200px;
+	}
+
+	.holder-fullwidth {
+		max-width: 100%;
+	}
 }

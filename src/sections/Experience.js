@@ -20,10 +20,10 @@ export default function Experience(props) {
                         &nbsp;&nbsp;&nbsp;Zeus Learning Pvt. Ltd.
                     </div>
                     <div className="role">
-                        <div className="designation col">
+                        <div className="designation">
                             Software Engineer
                         </div>
-                        <div className="duration col">
+                        <div className="duration">
                             Sept 2020 - Present
                         </div>
                     </div>
@@ -60,10 +60,10 @@ export default function Experience(props) {
                             &nbsp;&nbsp;&nbsp;Zeus Learning Pvt. Ltd.
                         </div>
                         <div className="role">
-                            <div className="designation col">
+                            <div className="designation">
                                 Software Engineer (Internship)
                             </div>
-                            <div className="duration col">
+                            <div className="duration">
                                 Aug 2020 - Aug 2020
                             </div>
                         </div>

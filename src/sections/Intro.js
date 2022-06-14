@@ -8,7 +8,7 @@ export default function Intro(props) {
         <section className="intro">
             
             <div id="particles-js">
-                <div className="container">
+                <div className="holder">
                     <div className="info">
                         <div>
                             <h1 className="name">
