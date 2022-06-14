@@ -9,6 +9,7 @@ export default function Experience(props) {
     return (
         <Section 
             className="experience"
+            id={props.id ? props.id : ""}
             title="Experience"
             large
             noreveal

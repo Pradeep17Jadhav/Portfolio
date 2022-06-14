@@ -16,9 +16,11 @@ export default function Section(props) {
 
     const content = (
         <div className="content">
+            <span className="brackets">{"< "}</span>
             <h1 className="title">
                 {props.title}
             </h1>
+            <span className="brackets">{" />"}</span>
             
             {
                 props.summary ? 
@@ -34,7 +36,7 @@ export default function Section(props) {
 
     if(props.noreveal) {
         return (
-            <section className={newClassName} style={style}>
+            <section className={newClassName}  id={props.id ? props.id : ""} style={style}>
                 <div className={holderClass}>
                     {content}
                 </div>
@@ -43,7 +45,7 @@ export default function Section(props) {
     }
     else {
         return (
-            <section className={newClassName} style={style}>
+            <section className={newClassName}  id={props.id ? props.id : ""} style={style}>
                 <div className={holderClass}>
                     <Zoom>
                         {content}

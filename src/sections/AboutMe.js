@@ -9,6 +9,7 @@ export default function AboutMe(props) {
     return (
         <Section 
             className="about-me" 
+            id={props.id ? props.id : ""}
             title={title}
             summary={summary}
             lightBackground

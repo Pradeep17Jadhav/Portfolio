@@ -1,5 +1,6 @@
 import React from 'react';
 import Section from '../components/Section';
+import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 
 import './Projects.css';
@@ -35,27 +36,29 @@ export default function Projects(props) {
     return (
         <Section 
             className="projects"
+            id={props.id ? props.id : ""}
             title="Projects"
             extralarge
-            noreveal
             lightBackground
         >
             <div className="container projects">
 
                 <div className="row">
                     {
-                        arrProjects.map(project => {
+                        arrProjects.map((project, index)=> {
                             return (
-                                <div className="col-12 col-lg-4 col-md-6 col-sm-6 col-xs-12" key={projectKey++}>
-                                    <BoxWithInfo
-                                        title={project.title}
-                                        tagline={project.tagline}
-                                        image={project.image}
-                                        desc={project.desc}
-                                        href={project.href}
-                                    >
-                                    </BoxWithInfo>
-                                </div> 
+                                <Fade left key={index}>
+                                    <div className="col-12 col-lg-4 col-md-6 col-sm-6 col-xs-12" key={projectKey++}>
+                                        <BoxWithInfo
+                                            title={project.title}
+                                            tagline={project.tagline}
+                                            image={project.image}
+                                            desc={project.desc}
+                                            href={project.href}
+                                        >
+                                        </BoxWithInfo>
+                                    </div> 
+                                </Fade>
                             );
                         })
                     }

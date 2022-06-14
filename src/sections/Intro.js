@@ -5,7 +5,7 @@ import TypedText from '../components/TypedText'
 
 export default function Intro(props) {
     return (
-        <section className="intro">
+        <section className="intro" id={props.id ? props.id : ""}>
             
             <div id="particles-js">
                 <div className="holder">
