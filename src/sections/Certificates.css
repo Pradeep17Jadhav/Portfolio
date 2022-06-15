@@ -1,0 +1,16 @@
+.certificate-img {
+    max-width: 160px;
+    margin: 12px;
+}
+
+@media (max-width: 1024px) {
+    .certificate-img {
+        width: 140px;
+    }
+}
+
+@media (max-width: 576px) {
+    .certificate-img {
+        width: 50px;
+    }
+}
