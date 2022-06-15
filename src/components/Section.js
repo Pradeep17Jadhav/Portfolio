@@ -16,11 +16,13 @@ export default function Section(props) {
 
     const content = (
         <div className="content">
-            <span className="brackets">{"< "}</span>
-            <h1 className="title">
-                {props.title}
-            </h1>
-            <span className="brackets">{" />"}</span>
+            <div className="title-block">
+                <span className="brackets">{"< "}</span>
+                <h1 className="title">
+                    {props.title}
+                </h1>
+                <span className="brackets">{" />"}</span>
+            </div>
             
             {
                 props.summary ? 

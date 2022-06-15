@@ -1,4 +1,4 @@
-.btn {
+.button {
     padding: 0px 24px;
     line-height: 46px;
     display: inline-block;
@@ -14,13 +14,13 @@
     cursor: pointer !important;
 }
 
-.btn-primary {
-    background-color: #dc965a !important;
+.button-primary {
+    background-color: #dc965a;
     color: #fff;
     margin: 16px 16px 0px 16px;
 }
 
-.btn-primary:after {
+.button-primary:after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -29,15 +29,15 @@
     top: 0;
     width: 0;
     transition: all .35s ease;
-    background: #1c1d24;
+    background: #131416;
     z-index: -1;
 }
 
-.btn-primary:hover {
+.button-primary:hover {
     color: #fff;
 }
 
-.btn-primary:hover:after {
+.button-primary:hover:after {
     width: 100%;
     left: auto;
     right: 0;

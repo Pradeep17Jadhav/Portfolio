@@ -4,11 +4,11 @@ import './ButtonPrimary.css';
 export default function ButtonPrimary(props) {
     return (
         <a 
-            className="btn btn-primary"
+            className="button button-primary"
             href={props.href}
             target={props.bNewTab ? "_blank" : ""}
         >
-            {props.text}
+            {props.children}
         </a>
     );
 }

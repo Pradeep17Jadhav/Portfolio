@@ -1,7 +1,6 @@
 import React from 'react';
 import Section from '../components/Section';
 import Fade from 'react-reveal/Fade';
-import Zoom from 'react-reveal/Zoom';
 
 import './Projects.css';
 import BoxWithInfo from '../components/BoxWithInfo';
@@ -39,6 +38,7 @@ export default function Projects(props) {
             id={props.id ? props.id : ""}
             title="Projects"
             extralarge
+            noreveal
             lightBackground
         >
             <div className="container projects">
@@ -55,6 +55,7 @@ export default function Projects(props) {
                                             image={project.image}
                                             desc={project.desc}
                                             href={project.href}
+                                            tooltip={"Click to open project on Github"}
                                         >
                                         </BoxWithInfo>
                                     </div> 

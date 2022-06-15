@@ -11,7 +11,7 @@ export default function Experience(props) {
             className="experience"
             id={props.id ? props.id : ""}
             title="Experience"
-            large
+            extralarge
             noreveal
         >
             <Zoom>
