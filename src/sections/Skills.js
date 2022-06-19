@@ -39,7 +39,7 @@ export default function Skills(props) {
                                 return (
                                     <div className="skill-item" key={index}>
                                         <div className="skill-logo">
-                                            <img src={skill.logoSrc} />
+                                            <img src={skill.logoSrc} alt={skill.skillName} />
                                         </div>
                                         <div className="skill-name">
                                             {skill.skillName}

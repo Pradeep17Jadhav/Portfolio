@@ -37,6 +37,7 @@ export default function Certificates(props) {
                                         <img 
                                             className="certificate-img"
                                             src={require(`./../resources/images/certificates/thumbnail_${index+1}.jpg`)}
+                                            alt={cert.name}
                                         />
                                     </a>
                                 );
