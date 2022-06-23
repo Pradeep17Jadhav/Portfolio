@@ -19,6 +19,7 @@ export default function AboutMe(props) {
             <ButtonPrimary
                 bNewTab={true}
                 href={viewResumeHref}
+                id="btn-view-resume"
             >
                 View Resume
             </ButtonPrimary>
@@ -26,6 +27,7 @@ export default function AboutMe(props) {
             <ButtonPrimary
                 bNewTab={true}
                 href={downloadResumeHref}
+                id="btn-download-resume"
             >
                 Download Resume
             </ButtonPrimary>
