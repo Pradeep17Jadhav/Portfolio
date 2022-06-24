@@ -8,6 +8,7 @@ export default function ButtonPrimary(props) {
             href={props.href}
             target={props.bNewTab ? "_blank" : ""}
             id={props.id ? props.id : ""}
+            download={props.download ? props.download : false}
         >
             {props.children}
         </a>
