@@ -8,7 +8,7 @@ function startParticles() {
         var config = {
             "particles": {
                 "number": {
-                    "value": 50,
+                    "value": 55,
                     "density": {
                         "enable": true,
                         "value_area": 800
@@ -33,7 +33,7 @@ function startParticles() {
                     }
                 },
                 "opacity": {
-                    "value": 0.1,
+                    "value": 0.15,
                     "random": false,
                     "anim": {
                         "enable": false,
@@ -79,11 +79,11 @@ function startParticles() {
                 "events": {
                     "onhover": {
                         "enable": true,
-                        "mode": "grab"
+                        "mode": "repulse"
                     },
                     "onclick": {
                         "enable": true,
-                        "mode": "bubble"
+                        "mode": "push"
                     },
                     "resize": true
                 },
