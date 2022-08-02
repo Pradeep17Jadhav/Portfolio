@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.8fb8df5b.css",
-    "main.js": "./static/js/main.ac905062.js",
+    "main.js": "./static/js/main.1ac90606.js",
     "static/js/787.1ed0c42c.chunk.js": "./static/js/787.1ed0c42c.chunk.js",
     "static/media/intro_background.jpg": "./static/media/intro_background.1accd7d8b47f9c58a80a.jpg",
     "static/media/thumbnail_10.jpg": "./static/media/thumbnail_10.f43f30e095d037fee599.jpg",
@@ -9,7 +9,7 @@
     "static/media/thumbnail_12.jpg": "./static/media/thumbnail_12.ddad078bb180f42d9b74.jpg",
     "static/media/thumbnail_5.jpg": "./static/media/thumbnail_5.9bfb04faefbbbe05957f.jpg",
     "static/media/thumbnail_3.jpg": "./static/media/thumbnail_3.9e3141418795df3cca13.jpg",
-    "static/media/Resume_Pradeep.pdf": "./static/media/Resume_Pradeep.443a88fea48ac9b1e123.pdf",
+    "static/media/Resume_Pradeep.pdf": "./static/media/Resume_Pradeep.7632a7b59ff3090b9be4.pdf",
     "static/media/HTML.webp": "./static/media/HTML.6cd483bb3357299bc5b8.webp",
     "static/media/thumbnail_1.jpg": "./static/media/thumbnail_1.c2f56999d5eb64344edb.jpg",
     "static/media/github.jpg": "./static/media/github.1979111babd8da97cedb.jpg",
@@ -37,11 +37,11 @@
     "index.html": "./index.html",
     "static/media/Javascript.webp": "./static/media/Javascript.91f4d5d55e0da6c45629.webp",
     "main.8fb8df5b.css.map": "./static/css/main.8fb8df5b.css.map",
-    "main.ac905062.js.map": "./static/js/main.ac905062.js.map",
+    "main.1ac90606.js.map": "./static/js/main.1ac90606.js.map",
     "787.1ed0c42c.chunk.js.map": "./static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8fb8df5b.css",
-    "static/js/main.ac905062.js"
+    "static/js/main.1ac90606.js"
   ]
 }
