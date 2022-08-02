@@ -30,6 +30,7 @@ export default function Skills(props) {
             id={props.id ? props.id : ""}
             title={"Skills"}
             extralarge
+            lightBackground
         >
             <Zoom>
                 <div className="section-box">

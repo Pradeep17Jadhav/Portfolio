@@ -16,7 +16,6 @@ export default function AboutMe(props) {
             id={props.id ? props.id : ""}
             title={title}
             summary={summary}
-            lightBackground
         >
             <ButtonPrimary
                 bNewTab={true}

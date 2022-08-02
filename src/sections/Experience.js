@@ -7,24 +7,25 @@ import './Experience.css';
 
 export default function Experience(props) {
     const experiances = [{
-        company: "Zeus Learning Pvt. Ltd.",
+        company: "Zeus Learning",
         logo: ZeusLogo,
         designation: "Software Engineer",
         duration: "Sept 2020 - Present",
         summary: [
-            "Working on an e-learning based digital whiteboard web application as a full stack developer.",
-            "Took ownership of scaling and refactoring legacy code and turned it into smaller reusable object-oriented code. Assessed and Improved efficiency of various systems by more than 50%.",
+            "Working on an e-learning based digital whiteboard web application “Annotate” as a full stack developer. Tech-stack used: Javascript ES6+, C#, ReactJs, NodeJS, PHP and MySQL.",
+            "Planned, designed and developed a PDF viewer application from scratch using Google’s PDFium in VanillaJS. Integrated it with the web application, Chrome extension and Google Classroom.",
+            "Developed an Assignment interface using ReactJs to allow interaction with Google Classroom Assignments. Used Google Classroom API and Google Drive API to fetch and store data.",
+            "Made teacher-student interaction easier by designing and implementing Comments feature on Chrome extension, for PDF viewer and websites, with serialization and deserialization support.",
+            "Introduced media comment feature by adding voice, video and screen recording support in the comments.",
             "Revamped user experience by building temporary save architecture for unsaved web annotations.",
             "Enhanced saving experience by introducing a scalable auto-save annotation feature in Chrome Extension.",
-            "Made teacher-student interaction easier by designing and implementing Comments feature on PDF viewer and websites, with serialization and deserialization support.",
-            "Introduced media comments feature by adding voice and screen recording support in the comments.",
-            "Developed an Assignment interface using ReactJs to allow interaction with Google Classroom Assignments. Used Google Classroom API and Google Drive API to fetch and store data.",
-            "Planned, designed and developed a PDF viewer application from scratch using Google’s PDFium in VanillaJS. Integrated it with the web application, Chrome extension and Google Classroom.",
-            "Supported plotting graph using table in Graphing Calculator mathematical tool.",
+            "Designed and developed Web Whiteboard feature to provide easier access to the annotations.",
+            "Supported plotting graph from tables using C#, in the Graphing Calculator mathematical tool.",
+            "Took ownership of scaling and refactoring legacy code and turned it into smaller reusable object-oriented code. Assessed and Improved efficiency of various systems by more than 50%.",            
         ]
     },
     {
-        company: "Zeus Learning Pvt. Ltd.",
+        company: "Zeus Learning",
         logo: ZeusLogo,
         designation: "Software Engineer (Internship)",
         duration: "Aug 2020 - Aug 2020",
@@ -43,9 +44,9 @@ export default function Experience(props) {
             noreveal
         >
             {
-                experiances.map(exp => {
+                experiances.map((exp, index) => {
                     return (
-                        <Zoom>
+                        <Zoom key={index}>
                             <div className="section-box">
                                 <div className="company">
                                     <img src={exp.logo} width="18px" alt={exp.company} />
@@ -61,15 +62,14 @@ export default function Experience(props) {
                                 </div>
                                 <ul className="bullets">
                                     {
-                                        exp.summary.map(item => {
+                                        exp.summary.map((item, index) => {
                                             return (
-                                                <li>
+                                                <li key={index}>
                                                     {item}
                                                 </li>
                                             )
                                         })
                                     }
-
                                 </ul>
                             </div>
                         </Zoom>
