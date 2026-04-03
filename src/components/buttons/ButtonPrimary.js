@@ -3,12 +3,13 @@ import './ButtonPrimary.css';
 
 export default function ButtonPrimary(props) {
     return (
-        <a 
+        <a
             className="button button-primary"
             href={props.href}
             target={props.bNewTab ? "_blank" : ""}
             id={props.id ? props.id : ""}
             download={props.download ? props.download : false}
+            rel="noreferrer"
         >
             {props.children}
         </a>

@@ -9,7 +9,7 @@ export default function BoxWithInfo(props) {
             <div className="boxwithinfo-content">
                 <div className="boxwithinfo-info">
                     <h5 className="boxwithinfo-title">
-                        <a href={props.href} target="_blank" title={tooltip}>
+                        <a href={props.href} target="_blank" title={tooltip} rel="noreferrer">
                             {props.title}
                         </a>
                     </h5>
@@ -18,7 +18,7 @@ export default function BoxWithInfo(props) {
                     </span>
                 </div>
 
-                <a href={props.href} className="link"  target="_blank" title={tooltip}>
+                <a href={props.href} className="link" target="_blank" title={tooltip} rel="noreferrer">
                     <img className="image" src={props.image} alt={props.title} />
                 </a>
 
