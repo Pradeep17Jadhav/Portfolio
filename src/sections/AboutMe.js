@@ -7,12 +7,12 @@ import './AboutMe.css';
 
 export default function AboutMe(props) {
     const title = "About Me";
-    const summary = "Software Engineer with 5.6 years of experience as a full stack developer in design, development and maintenance of an e-learning project. Worked extensively on Javascript, PHP, SQL to write modern, clean and scalable code. A result-oriented professional with the ability to work effectively and efficiently in a fast-paced environment.";
+    const summary = "I’m a Software Engineer with 5.9 years of experience in full-stack development, specializing in building modern, scalable web applications. I’ve worked at product-based companies like Reltio, Informatica, and Zeus Learning, where I contributed to developing high-quality products. My expertise includes ReactJS, JavaScript, TypeScript, and Node.js, with a strong focus on writing clean, maintainable, and efficient code. I’m passionate about continuously learning new technologies and tools to stay aligned with evolving industry trends.";
     const viewResumeHref = "https://drive.google.com/file/d/1tvMtXHXbB6lxmnAvBdnkePjka7Bp5tzo/view?usp=sharing";
 
     return (
-        <Section 
-            className="about-me" 
+        <Section
+            className="about-me"
             id={props.id ? props.id : ""}
             title={title}
             summary={summary}
