@@ -1,7 +1,7 @@
 import React from 'react';
 import Section from '../components/Section';
 import ZeusLogo from './../resources/experience/zeuslearning_logo.png';
-import Zoom from 'react-reveal/Zoom';
+import { motion } from "framer-motion";
 
 import './Experience.css';
 
@@ -46,7 +46,12 @@ export default function Experience(props) {
             {
                 experiances.map((exp, index) => {
                     return (
-                        <Zoom key={index}>
+                        <motion.div
+                            initial={{ scale: 0.8, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            transition={{ duration: 0.4, ease: "easeOut" }}
+                            key={index}
+                        >
                             <div className="section-box">
                                 <div className="company">
                                     <img src={exp.logo} width="18px" alt={exp.company} />
@@ -72,7 +77,7 @@ export default function Experience(props) {
                                     }
                                 </ul>
                             </div>
-                        </Zoom>
+                        </motion.div>
                     )
                 })
             }

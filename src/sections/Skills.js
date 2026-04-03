@@ -1,6 +1,6 @@
 import React from "react";
 import Section from "../components/Section";
-import Zoom from "react-reveal/Zoom";
+import { motion } from "framer-motion";
 
 import "./Skills.css";
 
@@ -77,7 +77,11 @@ export default function Skills(props) {
             extralarge
             lightBackground
         >
-            <Zoom>
+            <motion.div
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.4, ease: "easeOut" }}
+            >
                 <div className="section-box">
                     <div className="skill-set">
                         {arrSkills.map((skill, index) => {
@@ -92,7 +96,7 @@ export default function Skills(props) {
                         })}
                     </div>
                 </div>
-            </Zoom>
+            </motion.div>
         </Section>
     );
 }

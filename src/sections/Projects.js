@@ -1,6 +1,6 @@
 import React from 'react';
 import Section from '../components/Section';
-import Fade from 'react-reveal/Fade';
+import { motion } from "framer-motion";
 import GithubImage from './../resources/images/github.jpg';
 
 import './Projects.css';
@@ -34,7 +34,7 @@ export default function Projects(props) {
 
 
     return (
-        <Section 
+        <Section
             className="projects"
             id={props.id ? props.id : ""}
             title="Projects"
@@ -46,9 +46,14 @@ export default function Projects(props) {
 
                 <div className="row">
                     {
-                        arrProjects.map((project, index)=> {
+                        arrProjects.map((project, index) => {
                             return (
-                                <Fade left key={index}>
+                                <motion.div
+                                    key={index}
+                                    initial={{ x: -50, opacity: 0 }}
+                                    animate={{ x: 0, opacity: 1 }}
+                                    transition={{ duration: 0.5, ease: "easeOut" }}
+                                >
                                     <div className="col-12 col-lg-4 col-md-6 col-sm-6 col-xs-12" key={projectKey++}>
                                         <BoxWithInfo
                                             title={project.title}
@@ -59,8 +64,8 @@ export default function Projects(props) {
                                             tooltip={"Click to open project on Github"}
                                         >
                                         </BoxWithInfo>
-                                    </div> 
-                                </Fade>
+                                    </div>
+                                </motion.div>
                             );
                         })
                     }

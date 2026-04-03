@@ -1,17 +1,17 @@
 import React from 'react';
 import './Section.css';
-import Zoom from 'react-reveal/Zoom';
+import { motion } from "framer-motion";
 
 export default function Section(props) {
     const newClassName = "section " + (props.className ? props.className : "");
-    const style = props.lightBackground ? {backgroundColor: "#1c1d24"} : {};
+    const style = props.lightBackground ? { backgroundColor: "#1c1d24" } : {};
     let holderClass = "holder";
 
-    if(props.large)
+    if (props.large)
         holderClass += "-large";
-    else if(props.extralarge)
+    else if (props.extralarge)
         holderClass += "-extralarge";
-    else if(props.fullwidth)
+    else if (props.fullwidth)
         holderClass += "-fullwidth";
 
     const content = (
@@ -23,22 +23,22 @@ export default function Section(props) {
                 </h1>
                 <span className="brackets">{" />"}</span>
             </div>
-            
+
             {
-                props.summary ? 
+                props.summary ?
                     <p className="summary">
                         {props.summary}
                     </p>
-                : null
+                    : null
             }
 
             {props.children}
         </div>
     );
 
-    if(props.noreveal) {
+    if (props.noreveal) {
         return (
-            <section className={newClassName}  id={props.id ? props.id : ""} style={style}>
+            <section className={newClassName} id={props.id ? props.id : ""} style={style}>
                 <div className={holderClass}>
                     {content}
                 </div>
@@ -47,11 +47,15 @@ export default function Section(props) {
     }
     else {
         return (
-            <section className={newClassName}  id={props.id ? props.id : ""} style={style}>
+            <section className={newClassName} id={props.id ? props.id : ""} style={style}>
                 <div className={holderClass}>
-                    <Zoom>
+                    <motion.div
+                        initial={{ scale: 0.8, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{ duration: 0.4, ease: "easeOut" }}
+                    >
                         {content}
-                    </Zoom>
+                    </motion.div>
                 </div>
             </section>
         )

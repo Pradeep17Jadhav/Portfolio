@@ -1,6 +1,6 @@
 import React from 'react';
 import Section from '../components/Section';
-import Zoom from 'react-reveal/Zoom';
+import { motion } from "framer-motion";
 
 import './Certificates.css';
 
@@ -27,7 +27,11 @@ export default function Certificates(props) {
             title={"Certificates"}
             extralarge
         >
-            <Zoom>
+            <motion.div
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.4, ease: "easeOut" }}
+            >
                 <div className="section-box">
                     <div className="skill-set">
                         {
@@ -45,7 +49,7 @@ export default function Certificates(props) {
                         }
                     </div>
                 </div>
-            </Zoom>
+            </motion.div>
         </Section>
     )
 }
